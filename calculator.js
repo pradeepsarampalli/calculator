@@ -12,7 +12,7 @@ function calculate(){
     try{
     let exp =Number(eval(expression.value));
     if(isNaN(exp)){
-        throw new error("error");
+        throw new Error("error");
     }
     expression.value=exp;
     }
