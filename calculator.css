@@ -25,13 +25,17 @@ body{
 #output{
     width: 95%;
     height: 85%;
-    border: none;
+    border: rgba(255, 255, 255, 0);
     background: hsl(202, 11%, 29%);
     border-top-left-radius: 8px;
     color: white;
     font-size: 30px;
     text-align: right;
     padding-right: 10px;
+}
+#output:focus {
+    outline: none; 
+    border: none;  
 }
 .keys{
     height: 300px;
