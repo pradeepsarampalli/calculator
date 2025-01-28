@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="calculator.css"> 
+     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
-    <div class="main">
-    <div class="enter">
-    <input id="display" type="text">
+<h1>Basic Calculator</h1>
+<div class="main">
+    <div class="display">
+        <input id="output" type="text">
     </div>
-    <div class="buttons">
-        <button class="functionalities" onclick="clearexp()">AC</button>
+    <div class="keys">
+        <button class="specials" onclick="clearexp()">AC</button>
         <button class="operator" onclick="appenddisplay('()')">( )</button>
         <button class="operator" onclick="appenddisplay('%')">%</button>
         <button class="operator" onclick="appenddisplay('/')">/</button>
@@ -30,8 +31,8 @@
         <button class="operator" onclick="appenddisplay('*')">*</button>
         <button id="zero" onclick="appenddisplay('0')">0</button>
         <button onclick="appenddisplay('.')">.</button>
-        <button class="functionalities" onclick="del()">Del</button>
-        <button class="functionalities" onclick="calculate()" id="euqals">=</button>
+        <button class="specials" onclick="del()">Del</button>
+        <button class="specials" onclick="calculate()">=</button>
     </div>
 </div>
 <script src="calculator.js"></script>

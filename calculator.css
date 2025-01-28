@@ -1,48 +1,61 @@
-
-        body{
-            display: flex;
-            font-family: Arial, Helvetica, sans-serif;
-            justify-content: center;
-            align-items: center;
-        }
-        .main{
-            border: 1px solid black;
-            border-radius: 15px;
-            max-width: 300px;
-            background-color: gray;
-        }
-        #display{
-            text-align: right;
-            padding-right: 10px;
-            margin: 10px;
-            width: 90%;
-            height: 13vh;
-            border:none;
-            border-bottom: 1px solid rgba(236, 234, 233, 0.615);
-            font-size: 40px;
-            background-color: wite;
-            border-radius: 10px;
-        }
-        .buttons{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 10px;
-            row-gap: 15px;
-            margin: 20px;
-            margin-top: 10px;
-        }
-        .buttons button{
-            width: 50px;
-            border-radius: 50px;
-            height: 50px;
-            border: none;
-            color: white;
-            font-size: 18px;
-            background-color: rgb(65, 63, 63);
-        }
-        .buttons .operator{
-            background-color: rgba(255, 166, 0, 0.684);
-        }
-        .buttons .functionalities{
-            background-color: rgb(196, 149, 149);
-        }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: verdana;
+    background-color:#e0f7fa ;
+}
+.main{
+    width: 300px;
+    height: 400px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: hsl(207, 19%, 61%);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.display{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 90px;
+    background: hsl(202, 11%, 29%);
+    margin-bottom: 10px;
+}
+#output{
+    width: 95%;
+    height: 85%;
+    border: none;
+    background: hsl(202, 11%, 29%);
+    border-top-left-radius: 8px;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 10px;
+}
+.keys{
+    height: 300px;
+    display: grid;
+    justify-content: center;
+    margin-left: 5px;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+}
+.keys button{
+    border: .1px solid rgba(128, 128, 128, 0.5);
+    background: hsl(208, 25%, 86%);
+    width: 70px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.keys button:hover, .keys button:active{
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+.keys .specials{
+    background-color: hsl(357, 100%, 72%);
+}
+.keys .operator{
+    background-color: hsl(22, 100%, 72%);
+}
